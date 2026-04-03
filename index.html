@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sorter — Automated file organisation for macOS. Privacy-first, built-in PathGuard security." />
+  <title>Sorter — Automated File Organisation for Mac</title>
+
+  <!-- Favicon placeholder (replace with real icon assets) -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"> -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       Navigation
+  ════════════════════════════════════════════ -->
+  <nav aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#" class="nav-brand" aria-label="Sorter home">
+        <div class="nav-icon" aria-hidden="true">
+          <!-- Folder / sort icon -->
+          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 5a2 2 0 0 1 2-2h3.586a1 1 0 0 1 .707.293l1.414 1.414A1 1 0 0 0 10.414 5H16a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5z"/>
+          </svg>
+        </div>
+        <span>Sorter</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       Hero
+  ════════════════════════════════════════════ -->
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+
+        <!-- App icon -->
+        <div class="app-icon-wrap" aria-hidden="true">
+          <div class="app-icon">
+            <!--
+              Replace the SVG below with:
+              <img src="assets/icon.png" alt="Sorter app icon" width="120" height="120">
+            -->
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <!-- Folder body -->
+              <path d="M8 20a4 4 0 0 1 4-4h10l4 4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V20z" fill="rgba(255,255,255,.9)"/>
+              <!-- Sort arrows -->
+              <path d="M22 31l-4 5-4-5M18 36V26" stroke="#0071e3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <path d="M42 33l4-5 4 5M46 28v10" stroke="#0071e3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+        </div>
+
+        <h1 id="hero-heading">Keep your Mac<br><span>perfectly organised</span></h1>
+        <p class="tagline">
+          Sorter watches your folders and automatically moves files where they
+          belong — silently, securely, and entirely on your Mac.
+        </p>
+
+        <!-- Mac App Store Badge -->
+        <div class="badge-group">
+          <!--
+            Replace href="#" with your real App Store product URL.
+            Replace the inline badge with Apple's official Download badge image if preferred:
+            <img src="assets/mas-badge.svg" alt="Download on the Mac App Store" height="44">
+          -->
+          <a href="#" class="mas-badge" aria-label="Download Sorter on the Mac App Store (coming soon)">
+            <!-- Apple logo -->
+            <svg viewBox="0 0 814 1000" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-37.3-161.1-103.4C107.4 727.5 52 609.2 52 496.5c0-190.5 127.1-291.1 252.1-291.1 66.7 0 122.2 44.2 164.3 44.2 40.3 0 103.2-47 181-47 29.3 0 108.2 2.6 168.5 80.1zm-126.7-87.3c.6-1.9.6-3.9.6-5.8 0-36.7-19.5-74.7-51.9-103.4-37.3-33.4-91.2-58.5-143.1-58.5-3.9 0-7.7.3-11.6.9 4.5 36.7 21.4 72.7 53.8 103.4 31.1 29.3 79.7 55.7 152.2 63.4z"/>
+            </svg>
+            <span class="mas-badge-inner">
+              <span class="mas-badge-sub">Download on the</span>
+              <span class="mas-badge-main">Mac App Store</span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         Features
+    ════════════════════════════════════════════ -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <p class="section-label">Why Sorter</p>
+        <h2 class="section-title" id="features-heading">Everything you need. Nothing you don't.</h2>
+
+        <div class="features-grid">
+
+          <!-- Feature 1: Automated Organisation -->
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <!-- Lightning / automation icon -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3>Automated Organisation</h3>
+            <p>
+              Define simple rules and Sorter takes over. New downloads, project
+              files, and media are moved to the right folder the instant they
+              appear — no drag-and-drop required.
+            </p>
+          </article>
+
+          <!-- Feature 2: Privacy-First -->
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <!-- Lock / shield icon -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Privacy-First</h3>
+            <p>
+              No data ever leaves your Mac. Sorter processes everything locally
+              using macOS APIs — no cloud sync, no analytics, no account needed.
+              Your files stay yours.
+            </p>
+          </article>
+
+          <!-- Feature 3: PathGuard Security -->
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <!-- Path / route icon -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Built-in PathGuard Security</h3>
+            <p>
+              PathGuard validates every destination before a file is moved,
+              preventing accidental writes to system directories and ensuring
+              your rules never cause unintended side-effects.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         Privacy Policy
+    ════════════════════════════════════════════ -->
+    <section class="privacy" id="privacy-policy" aria-labelledby="privacy-heading">
+      <div class="container">
+        <div class="privacy-inner">
+          <p class="section-label">Legal</p>
+          <h2 class="section-title" id="privacy-heading">Privacy Policy</h2>
+
+          <div class="privacy-box">
+            <h3>Data Collection</h3>
+            <p>
+              Sorter does not collect, store, or transmit any personal data.
+              All file operations occur exclusively on your local Mac. No usage
+              analytics, crash reports, or telemetry are sent anywhere.
+            </p>
+
+            <h3>Permissions</h3>
+            <p>
+              Sorter requests access only to the folders you explicitly configure.
+              These permissions are managed entirely through macOS's standard
+              security model and can be revoked at any time in System Settings
+              → Privacy &amp; Security → Files and Folders.
+            </p>
+
+            <h3>Third-Party Services</h3>
+            <p>
+              Sorter does not integrate with any third-party service, SDK, or
+              advertising network. There are no in-app purchases that require
+              account creation.
+            </p>
+
+            <h3>Contact</h3>
+            <p>
+              Questions about this policy? Use the <a href="#contact">contact form</a> below.
+            </p>
+
+            <span class="privacy-placeholder">
+              Full policy — placeholder, update before App Store submission
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ═══════════════════════════════════════════
+         Contact
+    ════════════════════════════════════════════ -->
+    <section class="privacy" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="privacy-inner">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title" id="contact-heading">Contact</h2>
+
+          <div class="privacy-box">
+            <p>
+              Have a question or feedback about Sorter? A contact form is coming soon at
+              <strong>sorterapp.net</strong>. In the meantime, feel free to browse the
+              <a href="https://github.com/natsradamus/sorter" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+              for release notes and app information.
+            </p>
+            <span class="privacy-placeholder">Contact form — coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       Footer
+  ════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="yr"></span> Sorter. All rights reserved.
+      </p>
+      <ul class="footer-links">
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Stamp current year without hardcoding
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
