@@ -57,13 +57,21 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid var(--border-dark);
+  /* Isolate from scroll layer without backdrop-filter on the element itself */
+  transform: translateZ(0);
+}
+
+/* Pseudo-element carries the blur — keeps it off the main compositor thread
+   in Chrome where backdrop-filter on sticky elements causes scroll jank */
+nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background: rgba(17,17,19,.82);
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
-  border-bottom: 1px solid var(--border-dark);
-  /* Isolate nav repaints from scroll layer */
-  will-change: transform;
-  transform: translateZ(0);
+  z-index: -1;
 }
 
 .nav-inner {
