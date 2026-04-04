@@ -41,6 +41,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Promote body to its own compositor layer to prevent scroll jank */
+  will-change: scroll-position;
 }
 
 /* ── Layout ── */
@@ -59,6 +61,9 @@ nav {
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
   border-bottom: 1px solid var(--border-dark);
+  /* Isolate nav repaints from scroll layer */
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .nav-inner {
@@ -256,12 +261,13 @@ nav {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: background var(--transition), transform var(--transition);
+  /* Use opacity instead of scale — GPU composited, no layout cost */
+  transition: background var(--transition), opacity var(--transition);
+  will-change: background;
 }
 
 .feature-row:hover .feature-icon-wrap {
   background: var(--blue);
-  transform: scale(1.06);
 }
 
 .feature-icon-wrap svg {
