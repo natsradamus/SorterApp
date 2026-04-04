@@ -72,21 +72,6 @@ nav {
   text-decoration: none;
 }
 
-.nav-icon {
-  width: 32px;
-  height: 32px;
-  background: var(--blue);
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-icon svg {
-  width: 18px;
-  height: 18px;
-  fill: var(--white);
-}
 
 .nav-brand span {
   font-size: 1.05rem;
@@ -124,31 +109,6 @@ nav {
   filter: drop-shadow(var(--shadow-lg));
 }
 
-.app-icon {
-  width: 120px;
-  height: 120px;
-  border-radius: 27px; /* macOS Big Sur icon curve */
-  background: linear-gradient(145deg, #1a8cff, #0051a2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.app-icon::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,.22) 0%, transparent 60%);
-}
-
-.app-icon svg {
-  width: 64px;
-  height: 64px;
-  fill: var(--white);
-  position: relative;
-}
 
 .hero h1 {
   font-size: clamp(2.4rem, 5vw, 3.6rem);
@@ -420,6 +380,38 @@ footer {
 .contact-submit:hover {
   background: var(--blue-dark);
   transform: translateY(-1px);
+}
+
+.contact-submit:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-success {
+  background: #f0faf4;
+  border: 1px solid #a3d9b1;
+  color: #1a6b35;
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  font-size: .92rem;
+  margin-bottom: 20px;
+}
+
+.form-error {
+  background: #fff5f5;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  font-size: .92rem;
+  margin-bottom: 20px;
+}
+
+.field-error {
+  font-size: .8rem;
+  color: #b91c1c;
+  margin-top: 2px;
 }
 
 /* ── Responsive ── */
