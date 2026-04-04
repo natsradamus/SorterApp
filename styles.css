@@ -357,6 +357,71 @@ footer {
 
 .footer-links a:hover { color: var(--blue); }
 
+/* ── Contact Form ── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: var(--font);
+  font-size: .92rem;
+  color: var(--slate);
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--slate-soft);
+  opacity: .7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(0,113,227,.12);
+  background: var(--white);
+}
+
+.contact-submit {
+  font-family: var(--font);
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--blue);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 12px 28px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background .2s, transform .15s;
+}
+
+.contact-submit:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   .nav-links { display: none; }
