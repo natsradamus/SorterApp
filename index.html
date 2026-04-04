@@ -5,187 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sorter — Automated file organisation for macOS. Privacy-first, built-in PathGuard security." />
   <title>Sorter — Automated File Organisation for Mac</title>
-
-  <!-- Favicon placeholder (replace with real icon assets) -->
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"> -->
-
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.png">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════
        Navigation
-  ════════════════════════════════════════════ -->
+  ══════════════════════════════════════════ -->
   <nav aria-label="Main navigation">
     <div class="container nav-inner">
       <a href="#" class="nav-brand" aria-label="Sorter home">
-        <img src="assets/icon.png" alt="" width="32" height="32" style="border-radius:7px;">
+        <img src="assets/icon.png" alt="" width="28" height="28" class="nav-icon-img">
         <span>Sorter</span>
       </a>
-
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
-        <li><a href="#privacy-policy">Privacy Policy</a></li>
+        <li><a href="#privacy-policy">Privacy</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════════
-       Hero
-  ════════════════════════════════════════════ -->
   <main>
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
 
-        <!-- App icon -->
-        <div class="app-icon-wrap">
-          <img src="assets/icon.png" alt="Sorter app icon" width="120" height="120" style="border-radius:27px;display:block;filter:drop-shadow(0 12px 48px rgba(0,0,0,.18));">
+    <!-- ═══════════════════════════════════════
+         Hero
+    ══════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+
+        <div class="app-icon-wrap animate-icon">
+          <img src="assets/icon.png" alt="Sorter app icon" width="120" height="120" class="app-icon-img">
         </div>
 
-        <h1 id="hero-heading">Keep your Mac<br><span>perfectly organised</span></h1>
-        <p class="tagline">
-          Sorter watches your folders and automatically moves files where they
-          belong — silently, securely, and entirely on your Mac.
+        <h1 id="hero-heading" class="animate-headline">
+          Your Mac,<br>
+          <em>finally</em> sorted.
+        </h1>
+
+        <p class="tagline animate-tagline">
+          Sorter watches your folders and moves files where they belong —
+          silently, securely, and entirely on your Mac.
         </p>
 
-        <!-- Mac App Store Badge — official Apple artwork, do not modify -->
-        <div class="badge-group">
+        <div class="badge-group animate-badge">
           <a href="#" aria-label="Download Sorter on the Mac App Store (coming soon)">
             <img src="assets/mas-badge.svg"
                  alt="Download on the Mac App Store"
                  height="44"
-                 style="display:block;">
+                 class="mas-badge-img">
           </a>
         </div>
 
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- ═══════════════════════════════════════
          Features
-    ════════════════════════════════════════════ -->
+    ══════════════════════════════════════════ -->
     <section class="features" id="features" aria-labelledby="features-heading">
       <div class="container">
         <p class="section-label">Why Sorter</p>
-        <h2 class="section-title" id="features-heading">Everything you need. Nothing you don't.</h2>
+        <h2 class="section-title" id="features-heading">Built for how you actually work.</h2>
 
-        <div class="features-grid">
+        <div class="features-list">
 
-          <!-- Feature 1: Automated Organisation -->
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <!-- Lightning / automation icon -->
+          <article class="feature-row">
+            <div class="feature-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
               </svg>
             </div>
-            <h3>Automated Organisation</h3>
-            <p>
-              Define simple rules and Sorter takes over. New downloads, project
+            <div class="feature-body">
+              <h3>Automated Organisation</h3>
+              <p>Define simple rules and Sorter takes over. New downloads, project
               files, and media are moved to the right folder the instant they
-              appear — no drag-and-drop required.
-            </p>
+              appear — no drag-and-drop required.</p>
+            </div>
           </article>
 
-          <!-- Feature 2: Privacy-First -->
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <!-- Lock / shield icon -->
+          <article class="feature-row">
+            <div class="feature-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
             </div>
-            <h3>Privacy-First</h3>
-            <p>
-              No data ever leaves your Mac. Sorter processes everything locally
+            <div class="feature-body">
+              <h3>Privacy-First</h3>
+              <p>No data ever leaves your Mac. Sorter processes everything locally
               using macOS APIs — no cloud sync, no analytics, no account needed.
-              Your files stay yours.
-            </p>
+              Your files stay yours.</p>
+            </div>
           </article>
 
-          <!-- Feature 3: PathGuard Security -->
-          <article class="feature-card">
-            <div class="feature-icon" aria-hidden="true">
-              <!-- Path / route icon -->
+          <article class="feature-row">
+            <div class="feature-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="3"/>
-                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
               </svg>
             </div>
-            <h3>Built-in PathGuard Security</h3>
-            <p>
-              PathGuard validates every destination before a file is moved,
+            <div class="feature-body">
+              <h3>Built-in PathGuard Security</h3>
+              <p>PathGuard validates every destination before a file is moved,
               preventing accidental writes to system directories and ensuring
-              your rules never cause unintended side-effects.
-            </p>
+              your rules never cause unintended side-effects.</p>
+            </div>
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- ═══════════════════════════════════════
          Privacy Policy
-    ════════════════════════════════════════════ -->
-    <section class="privacy" id="privacy-policy" aria-labelledby="privacy-heading">
+    ══════════════════════════════════════════ -->
+    <section class="prose-section" id="privacy-policy" aria-labelledby="privacy-heading">
       <div class="container">
-        <div class="privacy-inner">
+        <div class="prose-inner">
           <p class="section-label">Legal</p>
-          <h2 class="section-title" id="privacy-heading">Privacy Policy</h2>
+          <h2 class="section-title left" id="privacy-heading">Privacy Policy</h2>
 
-          <div class="privacy-box">
+          <div class="prose-box">
             <h3>Data Collection</h3>
-            <p>
-              Sorter does not collect, store, or transmit any personal data.
-              All file operations occur exclusively on your local Mac. No usage
-              analytics, crash reports, or telemetry are sent anywhere.
-            </p>
+            <p>Sorter does not collect, store, or transmit any personal data.
+            All file operations occur exclusively on your local Mac. No usage
+            analytics, crash reports, or telemetry are sent anywhere.</p>
 
             <h3>Permissions</h3>
-            <p>
-              Sorter requests access only to the folders you explicitly configure.
-              These permissions are managed entirely through macOS's standard
-              security model and can be revoked at any time in System Settings
-              → Privacy &amp; Security → Files and Folders.
-            </p>
+            <p>Sorter requests access only to the folders you explicitly configure.
+            These permissions are managed entirely through macOS's standard
+            security model and can be revoked at any time in System Settings
+            → Privacy &amp; Security → Files and Folders.</p>
 
             <h3>Third-Party Services</h3>
-            <p>
-              Sorter does not integrate with any third-party service, SDK, or
-              advertising network. There are no in-app purchases that require
-              account creation.
-            </p>
+            <p>Sorter does not integrate with any third-party service, SDK, or
+            advertising network. There are no in-app purchases that require
+            account creation.</p>
 
             <h3>Contact</h3>
-            <p>
-              Questions about this policy? Use the <a href="#contact">contact form</a> below.
-            </p>
-
-            <span class="privacy-placeholder">
-              Full policy — placeholder, update before App Store submission
-            </span>
+            <p>Questions about this policy? Use the <a href="#contact">contact form</a> below.</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- ═══════════════════════════════════════════
-         Contact
-    ════════════════════════════════════════════ -->
-    <section class="privacy" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="privacy-inner">
-          <p class="section-label">Get in Touch</p>
-          <h2 class="section-title" id="contact-heading">Contact</h2>
 
-          <div class="privacy-box">
-            <p style="margin-bottom:24px;">
+    <!-- ═══════════════════════════════════════
+         Contact
+    ══════════════════════════════════════════ -->
+    <section class="prose-section prose-section--alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="prose-inner">
+          <p class="section-label">Get in Touch</p>
+          <h2 class="section-title left" id="contact-heading">Contact</h2>
+
+          <div class="prose-box">
+            <p class="contact-intro">
               Have a question or feedback about Sorter? Fill out the form below or email
               <a href="mailto:rubie@sorterapp.net">rubie@sorterapp.net</a> directly.
             </p>
 
             <div data-fs-success class="form-success" hidden>
-              Thanks for reaching out! We'll get back to you soon.
+              Thanks for reaching out — we'll get back to you soon.
             </div>
             <div data-fs-error class="form-error" hidden></div>
 
@@ -213,42 +196,40 @@
               </div>
               <button type="submit" class="contact-submit" data-fs-submit-btn>Send Message</button>
             </form>
-
-            <script>
-              window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-              formspree('initForm', { formElement: '#contact-form', formId: 'mwvwrazv' });
-            </script>
-            <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════
        Footer
-  ════════════════════════════════════════════ -->
+  ══════════════════════════════════════════ -->
   <footer>
     <div class="container footer-inner">
-      <p class="footer-copy">
-        &copy; <span id="yr"></span> Sorter. All rights reserved.
-      </p>
+      <p class="footer-copy">&copy; <span id="yr"></span> Sorter. All rights reserved.</p>
       <ul class="footer-links">
         <li><a href="#contact">Contact</a></li>
         <li><a href="#privacy-policy">Privacy Policy</a></li>
       </ul>
     </div>
-    <div class="container" style="padding-top:12px;border-top:1px solid var(--border);margin-top:16px;">
-      <p style="font-size:.72rem;color:var(--slate-soft);line-height:1.6;">
-        Mac App Store is a service mark of Apple Inc., registered in the U.S. and other countries.
-        Mac is a trademark of Apple Inc., registered in the U.S. and other countries.
-      </p>
+    <div class="container footer-legal">
+      <p>Mac App Store is a service mark of Apple Inc., registered in the U.S. and other countries.
+      Mac is a trademark of Apple Inc., registered in the U.S. and other countries.</p>
     </div>
   </footer>
 
   <script>
-    // Stamp current year without hardcoding
     document.getElementById('yr').textContent = new Date().getFullYear();
   </script>
+
+  <!-- Formspree — moved to end of body per best practice -->
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'mwvwrazv' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
 </body>
 </html>
