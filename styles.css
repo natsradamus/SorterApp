@@ -178,51 +178,14 @@ nav {
   flex-wrap: wrap;
 }
 
-.mas-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--slate);
-  color: var(--white);
-  text-decoration: none;
-  padding: 11px 22px;
-  border-radius: var(--radius-sm);
-  font-size: .92rem;
-  font-weight: 500;
-  transition: background .2s, transform .15s;
-  border: 1.5px solid transparent;
+.badge-group a {
+  display: inline-block;
+  transition: opacity .2s, transform .15s;
 }
 
-.mas-badge:hover {
-  background: var(--slate-mid);
+.badge-group a:hover {
+  opacity: .85;
   transform: translateY(-1px);
-}
-
-.mas-badge svg {
-  width: 22px;
-  height: 22px;
-  fill: var(--white);
-  flex-shrink: 0;
-}
-
-.mas-badge-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1.15;
-}
-
-.mas-badge-sub {
-  font-size: .68rem;
-  font-weight: 400;
-  opacity: .8;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-}
-
-.mas-badge-main {
-  font-size: 1rem;
-  font-weight: 600;
 }
 
 /* ── Features ── */
