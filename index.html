@@ -62,7 +62,7 @@
         <div class="hero-pills animate-pills" aria-hidden="true">
           <span class="hero-pill">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Instant — no polling
+            Works instantly
           </span>
           <span class="hero-pill">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -90,7 +90,7 @@
         </div>
 
         <p class="hero-trust animate-trust">
-          Apple Notarized &middot; Sandboxed &middot; No account required &middot; Free
+          Apple Notarized &middot; Apple Verified &middot; No account required &middot; Free
         </p>
 
       </div>
@@ -108,7 +108,7 @@
         <div class="trust-divider" aria-hidden="true"></div>
         <div class="trust-item">
           <strong>80+</strong>
-          <span>File types recognised</span>
+          <span>File types recognized</span>
         </div>
         <div class="trust-divider" aria-hidden="true"></div>
         <div class="trust-item">
@@ -118,7 +118,7 @@
         <div class="trust-divider" aria-hidden="true"></div>
         <div class="trust-item">
           <strong>1&thinsp;s</strong>
-          <span>Detection latency</span>
+          <span>Reaction time</span>
         </div>
       </div>
     </div>
@@ -154,10 +154,10 @@
                 <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/>
               </svg>
             </div>
-            <h3>Project-Aware</h3>
-            <p>Compound extensions — <code>.tar.gz</code>, <code>.user.js</code>, <code>.min.css</code> — are classified as a single unit, not split at the last dot. Sorter never breaks a project apart by moving half an archive to one folder and its metadata to another. Files stay together the way you created them.</p>
-            <ul class="card-tags" aria-label="Example compound extensions">
-              <li>.tar.gz</li><li>.tar.bz2</li><li>.user.js</li><li>.min.css</li><li>.d.ts</li><li>.spec.ts</li>
+            <h3>Keeps Files Together</h3>
+            <p>Some files are made of multiple parts — a compressed archive, a web script with its config, a font with its license. Sorter recognizes these as a single item and always moves them as one, so your files never end up scattered across separate folders.</p>
+            <ul class="card-tags" aria-label="Example file groups">
+              <li>Archives</li><li>Web assets</li><li>Code projects</li><li>Font packages</li>
             </ul>
           </article>
 
@@ -169,9 +169,9 @@
               </svg>
             </div>
             <h3>Privacy by Design</h3>
-            <p>Sorter runs inside Apple's full <strong>App Sandbox</strong>. It can only see the folders you explicitly grant — nothing else on your Mac. There are no analytics, no crash reporters, no network calls of any kind. The code that moves your files never touches the internet, because it has no ability to.</p>
+            <p>Sorter is built on Apple's strictest security model. It can only see the folders you choose — nothing else on your Mac. There are no analytics, no crash reporters, no network calls of any kind. The code that moves your files never touches the internet, because it has no ability to.</p>
             <ul class="card-tags" aria-label="Privacy guarantees">
-              <li>App Sandbox</li><li>No network</li><li>No analytics</li><li>Security-scoped bookmarks</li>
+              <li>No internet access</li><li>No analytics</li><li>No account</li><li>Apple verified</li>
             </ul>
           </article>
 
@@ -193,15 +193,15 @@
             <div class="step-num" aria-hidden="true">1</div>
             <div class="step-body">
               <h3>A new file appears</h3>
-              <p>Sorter uses macOS's <strong>kqueue</strong> system — the same low-level event API Finder uses — to detect file arrivals instantly. There is no timer. There is no polling. CPU usage at idle is exactly 0%.</p>
+              <p>Sorter is notified by macOS the moment a file lands in a watched folder — the same way Finder knows when something changes. There is no timer running in the background. CPU usage at idle is exactly 0%.</p>
             </div>
           </div>
 
           <div class="step">
             <div class="step-num" aria-hidden="true">2</div>
             <div class="step-body">
-              <h3>Extension-first classification</h3>
-              <p>The filename is checked for compound extensions first (<code>.tar.gz</code>, <code>.d.ts</code>), then single extensions. The entire classification map lives on-device. No file name or path is ever sent anywhere.</p>
+              <h3>What kind of file is it?</h3>
+              <p>Sorter reads the file's extension and looks it up in a built-in list of 80+ types — images, documents, code, audio, video, and more. Everything happens on your Mac. No file name or path is ever sent anywhere.</p>
             </div>
           </div>
 
@@ -209,7 +209,7 @@
             <div class="step-num" aria-hidden="true">3</div>
             <div class="step-body">
               <h3>Safety checks, then move</h3>
-              <p>Before touching anything, Sorter verifies the destination is not a system directory, the file isn't still being written (partial downloads are held for 1 second), and the source wasn't already in the right place. Only then does the file move — using macOS's own <strong>NSFileCoordinator</strong> API.</p>
+              <p>Before moving anything, Sorter checks that the destination is safe, that the file has finished downloading, and that it isn't already where it needs to go. Only then does the move happen — handled safely by macOS itself.</p>
             </div>
           </div>
 
@@ -217,7 +217,7 @@
             <div class="step-num" aria-hidden="true">4</div>
             <div class="step-body">
               <h3>Forward-only, always</h3>
-              <p>Sorter only acts on new arrivals. It never touches files that existed before you added a watch folder, never re-sorts on app launch, and never moves a file twice. Your existing organisation stays exactly as you left it.</p>
+              <p>Sorter only acts on new arrivals. It never touches files that existed before you added a watch folder, never re-sorts on app launch, and never moves a file twice. Your existing organization stays exactly as you left it.</p>
             </div>
           </div>
 
@@ -252,11 +252,11 @@
 
           <details class="faq-item">
             <summary class="faq-q">
-              Why forward-only? Will Sorter reorganise my existing files?
+              Why forward-only? Will Sorter reorganize my existing files?
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-a">
-              <p>No. Sorter only acts on files that arrive <em>after</em> it is running. It never scans or rearranges files that already exist in a folder. This is a deliberate design decision, not a limitation. Retroactive sorting is the fastest way to accidentally destroy a project structure you spent weeks building. Sorter respects your past work and only shapes what comes next.</p>
+              <p>No. Sorter only acts on files that arrive <em>after</em> it is running. It never scans or rearranges files that already exist in a folder. This is a deliberate design decision, not a limitation — automatically moving everything you already have is the fastest way to accidentally scatter a project you spent weeks building. Sorter respects your past work and only shapes what comes next.</p>
             </div>
           </details>
 
@@ -266,7 +266,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-a">
-              <p>Sorter includes multiple safety layers. <strong>PathGuard</strong> checks every destination against a list of system-reserved directory names before any move happens. Files that match in-progress download extensions are held until the download is complete. If a file would land in the same folder it's already in, Sorter skips it. Conflicts are resolved by appending <code>_1</code>, <code>_2</code>, etc. — nothing is ever overwritten or deleted. Every move is logged in the Activity Log, accessible from the menu bar.</p>
+              <p>Yes. Sorter checks every move before it happens — it won't touch system folders, and it won't move a file that hasn't finished downloading. If two files would end up with the same name, it renames rather than overwrites. Nothing is ever deleted. Every move is recorded in the Activity Log, accessible from the menu bar icon.</p>
             </div>
           </details>
 
@@ -276,17 +276,17 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-a">
-              <p>Any folder you grant access to via the standard macOS file picker. Sorter has built-in, silent permission to watch <strong>~/Downloads</strong> (via a macOS entitlement). For all other locations — Desktop, Documents, a project folder on an external drive — you add them in Settings. Sorter stores those permissions as <strong>security-scoped bookmarks</strong>, so access survives reboots without asking again. You can remove a folder at any time and Sorter forgets it instantly.</p>
+              <p>Any folder you choose via the standard macOS file picker. Sorter can watch your Downloads folder automatically, with no extra steps. For other locations — Desktop, Documents, a project folder, an external drive — you add them in Settings. Once added, Sorter remembers them across reboots. You can remove a folder at any time and Sorter forgets it instantly.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-q">
-              Can I customise where specific file types go?
+              Can I customize where specific file types go?
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-a">
-              <p>Yes. In Power Mode (Settings → Categories), you can reassign any individual file extension to a different category — for example, routing <code>.py</code> files to Code instead of Scripts, or moving <code>.ai</code> files to a dedicated Design folder. You can also rename any category folder, disable entire categories, or toggle Simple Mode to just switch top-level groups on and off without thinking about sub-categories.</p>
+              <p>Yes. In Settings, you can reassign any file type to a different folder, rename any category, or turn categories off entirely. If you just want simple on/off control without digging into the details, Simple Mode lets you do that in one tap.</p>
             </div>
           </details>
 
@@ -296,7 +296,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-a">
-              <p>Launch at login is opt-in and toggled explicitly in Settings. It is never enabled without your permission. When no files are arriving, Sorter consumes <strong>0% CPU</strong> — it uses kernel-level change notifications (kqueue), not timers or polling loops. The menu bar icon is the only persistent footprint. On Apple Silicon, the power draw at idle is unmeasurable.</p>
+              <p>Launch at login is opt-in and toggled in Settings — it is never enabled without your permission. When no files are arriving, Sorter consumes <strong>0% CPU</strong>. It waits to be told by macOS that something changed, rather than constantly checking. The menu bar icon is the only persistent footprint, and on Apple Silicon the power draw at idle is unmeasurable.</p>
             </div>
           </details>
 
@@ -306,7 +306,7 @@
               <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </summary>
             <div class="faq-a">
-              <p>The features are identical. The <strong>.dmg</strong> is Apple Notarized — Gatekeeper will verify it before it opens, and macOS will prompt you the first time just as it does for any Notarized app. The <strong>Mac App Store</strong> version is distributed and updated through Apple's infrastructure, which some users prefer for trust or fleet-management reasons. Both are sandboxed. Choose whichever you're comfortable with.</p>
+              <p>The features are identical. The <strong>.dmg</strong> is Apple Notarized — macOS checks it automatically before it opens, so you know it's safe. The <strong>Mac App Store</strong> version is distributed and updated through Apple directly, which some users prefer for convenience or for managing multiple Macs. Choose whichever feels right.</p>
             </div>
           </details>
 
